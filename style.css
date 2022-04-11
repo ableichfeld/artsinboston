@@ -94,6 +94,15 @@ a:hover{
   position: sticky;
   top: 0;
   z-index: 0;
+  display: block;
+}
+
+#introPhotoMobile{
+  width: 100vw;
+  position: sticky;
+  top: 0vh;
+  z-index: 0;
+  display: none;
 }
 
 .introDiv {
@@ -198,4 +207,41 @@ a:hover{
   font-family: source serif pro, serif;
   font-weight: 300;
   font-style: italic;
+}
+
+@media only screen and (max-width: 999px){
+  body {
+    margin-right: -36vw;
+  }
+
+  #introPhoto{
+    display: none;
+    margin-right: -36vw;
+  }
+
+  #introPhotoMobile{
+    display: block;
+  }
+
+  .introDiv{
+    height: 500vh
+    margin-right: -36vw;
+  }
+
+  .introHeader{
+    font-size: 1rem;
+    margin-top: 50vh;
+    margin-left: 32.5vw;
+  }
+
+  .introHeader:last-of-type{
+    /*width: 60vw;
+    margin-left: 20vw;*/
+    font-size: 1rem;
+  }
+
+  .scrollPhoto1{
+    width: 100vw;
+    height: auto;
+  }
 }

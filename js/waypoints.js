@@ -23,10 +23,12 @@ var opacitychange = new Waypoint({
     if(direction === "down") {
 
       document.getElementById("introPhoto").src="photos/introTransitionR.gif";
+      document.getElementById("introPhotoMobile").src="photos/introTransitionMobileR.gif";
 
     } else if(direction === "up") {
 
       document.getElementById("introPhoto").src="photos/introTransition.gif";
+      document.getElementById("introPhotoMobile").src="photos/introTransitionMobile.gif";
 
     }
   }
