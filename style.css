@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Open+Sans:wght@600;700&family=Source+Serif+Pro:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+  margin:0;
+}
+
+p{
+  font-family: source serif pro, serif;
+}
+
+a{
+  color: #b12d27;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.photoGallery{
+  position: static;
+  height: 100vh;
+  margin-bottom: 50px;
+}
+
+.container .box {
+  width:100vw;
+  height:100vh;
+  position:relative;
+  display:inline-block;
+}
+
+.container .box > div {
+  width:50vw;
+  height:100vh;
+  /*margin:-50px 0 0 -50px;*/
+  position:absolute;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box p{
+  font-size:12px;
+  color:#FFF;
+  line-height:.7;
+  font-weight:bold;
+}
+
+.container {
+  overflow-x: scroll;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  position:absolute;
+  width:105vh;
+  height:100vw;
+}
+
+.container::-webkit-scrollbar {
+  width: 0 !important
+}
+
+.container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
+}
+
+.scrollPhoto1{
+  height: 100vh;
+  margin-right: 15px;
+}
+
+.scrollPhoto2{
+  height: 80vh;
+  margin-right: 15px;
+  margin-bottom: 10vh;
+}
+
+.photoCaption{
+  font-family: source serif pro, serif;
+  color: white;
+  z-index: 5;
+  position: absolute;
+}
+
+#introPhoto{
+  width: 98.75vw;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+.introDiv {
+  height: 300vh;
+}
+
+#introText{
+  z-index: 5;
+  position: absolute;
+}
+
+#waypoint1{
+  height: 15vh;
+}
+
+.introHeader{
+  width: 35vw;
+  font-family: source serif pro, serif;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+  text-shadow: 2px 2px 3px #000000;
+  margin-top: 25vw;
+  margin-left: 32.5vw;
+}
+
+.introHeader:last-of-type{
+  width: 60vw;
+  margin-left: 20vw;
+  font-family: open sans, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#bylineDiv{
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
+  border: solid 1px #dddddd;
+  padding: 2px;
+  margin-top: 40px;
+}
+
+#byline{
+  font-family: Assistant, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#date{
+  font-family: source serif pro, serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(0,0,0,0.3);
+}
+
+.storyText{
+  margin: 0 10vw 0 10vw;
+  font-size: 1.1em;
+}
+
+#graf1{
+  margin-top: 25px;
+}
+
+.credits{
+  padding: 15px 10vw;
+  background-color: #eeeeee;
+}
+
+.credits p{
+  margin: 2px 0px;
+  font-family: source serif pro, serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.credits h2{
+  font-family: open sans, sans-serif;
+  font-size: 1.2em;
+  margin: 10px 0px 7px 0px;
+  color: #bbbbbb;
+}
+
+.credits a{
+  font-weight: 400;
+}
+
+#gradient{
+  height: 40px;
+  background-image: linear-gradient(rgba(238, 238, 238, 0), rgba(238, 238, 238, 1));
+}
+
+.dataViz{
+  margin: 0 10vw 50px 10vw;
+}
+
+.vizCaption{
+  font-family: source serif pro, serif;
+  font-weight: 300;
+  font-style: italic;
+}
