@@ -17,6 +17,14 @@ a:hover{
   text-decoration: underline;
 }
 
+.desktop{
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
 .photoGallery{
   position: static;
   height: 100vh;
@@ -210,8 +218,13 @@ a:hover{
 }
 
 @media only screen and (max-width: 999px){
-  body {
-    margin-right: -36vw;
+
+  .mobile{
+    display: block;
+  }
+
+  .desktop{
+    display: none;
   }
 
   #introPhoto{
@@ -230,18 +243,37 @@ a:hover{
 
   .introHeader{
     font-size: 1rem;
+    width: 60vw;
     margin-top: 50vh;
-    margin-left: 32.5vw;
+    margin-left: 20vw;
   }
 
   .introHeader:last-of-type{
     /*width: 60vw;
     margin-left: 20vw;*/
-    font-size: 1rem;
+    font-size: 1.25rem;
+  }
+
+  #byline{
+    margin: 4px;
+  }
+
+  .photoGallery{
+    margin-bottom: -300px;
   }
 
   .scrollPhoto1{
     width: 100vw;
     height: auto;
+  }
+
+  .scrollPhoto2{
+    width: 90vw;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .verticalPhoto{
+    width: 45vw;
   }
 }
