@@ -258,6 +258,10 @@ a:hover{
     margin: 4px;
   }
 
+  .dataViz .mobile{
+    height: 720px;
+  }
+
   .photoGallery{
     margin-bottom: -300px;
   }
