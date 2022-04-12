@@ -33,3 +33,27 @@ var opacitychange = new Waypoint({
     }
   }
 })
+
+var danceScroll = new Waypoint({
+  element: document.getElementById('danceGallery'),
+  handler: function(direction) {
+    if(direction === "down") {
+      document.getElementById("danceScroll").style.opacity="0";}
+    }
+})
+
+var philharmonicScroll = new Waypoint({
+  element: document.getElementById('philharmonicGallery'),
+  handler: function(direction) {
+    if(direction === "down") {
+      document.getElementById("philharmonicScroll").style.opacity="0";}
+    }
+})
+
+var chuangScroll = new Waypoint({
+  element: document.getElementById('chuangGallery'),
+  handler: function(direction) {
+    if(direction === "down") {
+      document.getElementById("chuangScroll").style.opacity="0";}
+    }
+})

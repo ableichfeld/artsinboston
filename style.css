@@ -2,6 +2,8 @@
 
 body {
   margin:0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 p{
@@ -29,6 +31,20 @@ a:hover{
   position: static;
   height: 100vh;
   margin-bottom: 50px;
+}
+
+.photoScroll{
+  position: relative;
+  top: 50vh;
+  left: 35vw;
+  font-family: open sans, sans-serif;
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  font-style: italic;
+  z-index: 5;
+  transition: opacity 1s;
+  cursor: default;
 }
 
 .container .box {
@@ -148,7 +164,7 @@ a:hover{
 }
 
 #bylineDiv{
-  width: 80vw;
+  width: 60vw;
   display: flex;
   justify-content: center;
   background-color: #eeeeee;
@@ -171,7 +187,7 @@ a:hover{
 }
 
 .storyText{
-  margin: 0 10vw 0 10vw;
+  margin: 15vh 20vw 0 20vw;
   font-size: 1.1em;
 }
 
@@ -180,7 +196,7 @@ a:hover{
 }
 
 .credits{
-  padding: 15px 10vw;
+  padding: 15px 20vw;
   background-color: #eeeeee;
 }
 
@@ -208,10 +224,14 @@ a:hover{
 }
 
 .dataViz{
-  margin: 0 10vw 50px 10vw;
+  margin: 0 0 50px 20vw;
+  padding: 20px;
+  width: 1000px;
+  background-color: #eeeeee;
 }
 
 .vizCaption{
+  width: 60vw;
   font-family: source serif pro, serif;
   font-weight: 300;
   font-style: italic;
@@ -260,6 +280,10 @@ a:hover{
 
   .dataViz .mobile{
     height: 720px;
+  }
+
+  .dataViz{
+    width:275px;
   }
 
   .photoGallery{
