@@ -295,6 +295,7 @@ a:hover{
 
   .dataViz{
     width:275px;
+    margin-left: 15vw;
   }
 
   .photoGallery{
@@ -326,6 +327,10 @@ a:hover{
   }
 
   .storyText{
-    margin-top: 5vh;
+    margin: 5vh 15vw 0 15vw;
+  }
+
+  .credits{
+    padding: 7px 15vw;
   }
 }
