@@ -13,8 +13,8 @@
       <div id="introText">
         <h1 class="introHeader">Two years ago, the COVID-19 pandemic moved the arts off stage.</h1>
         <div id="waypoint1"></div>
-        <h1 class="introHeader">The art scene is coming back to Boston.</h1>
-        <h1 class="introHeader">With help from Mayor Michelle Wu, Boston arts organizations start to revive from pandemic damages</h1>
+        <h1 class="introHeader">Now, the art scene is coming back to Boston.</h1>
+        <h1 class="introHeader">With help from Mayor Michelle Wu, Boston arts organizations are starting to to revive from pandemic damages</h1>
       </div>
       <img src="photos/bostonphilharmonic.jpg" alt="" id="introPhoto">
       <img src="photos/bostonphilharmonicMobile.jpg" alt="" id="introPhotoMobile">
@@ -113,7 +113,7 @@
       <p>“I think that there can always be more funding with art,” Patterson said. “But I [also] think that we can be grateful for the increases [in funding] that we've seen during this time, as well as continue to advocate more so that we can more equitably sustain our industry.”</p>
     </div>
     <div class="photoGallery">
-      <div class="container">
+      <div class="container" id="danceContainer">
         <div class="container2">
           <img src="photos/dancephoto1.JPG" class="scrollPhoto1" alt="">
           <img src="photos/dancephoto2.JPG" class="scrollPhoto1" alt="">
@@ -132,7 +132,6 @@
       <h2 class="photoScrollDesktop" id="danceScroll">Scroll right for more photos</h2>
     </div>
     <h2 class="photoScrollMobile">Scroll right for more photos</h2>
-    <div id="danceGallery"></div>
     <div class="storyText">
       <p>No matter how much money organizations get from public funding, the implementation of public funds in general represents something more than money, said Adam Mazo, director of <a href="https://upstanderproject.org/">the Upstander Project</a>.</p>
       <p>“When public dollars go into the arts and culture area, it’s also a signal of what’s important to us as citizens in our community,” Mazo said.</p>
@@ -143,7 +142,7 @@
       <p>“There’s an energy. There’s a joy [and] uplifting effect of the Philharmonic concerts. It’s very personal and very emotional,” Forgays said. “It’s impossible to walk out without your spirits lifted and your optimism having come up quite a bit.”</p>
     </div>
     <div class="photoGallery">
-      <div class="container">
+      <div class="container" id="philharmonicContainer">
         <div class="container2">
           <img src="photos/philphoto1.jpg" class="scrollPhoto1" alt="">
           <img src="photos/philpullquote.svg" class="scrollPhoto1" alt="">
@@ -165,7 +164,7 @@
       <p>“There’s the conversation of, ‘What work is the most urgent?’ Is it most urgent to put on a production? Or is it most urgent during a time of a lot of anti-Asian hate to host a space for the community, to have a community conversation [and] to let folks rest?” Qu said.</p>
     </div>
     <div class="photoGallery">
-      <div class="container">
+      <div class="container" id="chuangContainer">
         <div class="container2">
           <img src="photos/chuangphoto1.JPG" class="scrollPhoto1" alt="">
           <img src="photos/chuangphoto2.JPG" class="scrollPhoto2" alt="">
@@ -201,5 +200,32 @@
       <p>Web design by <a href="https://huntnewsnu.com/staff_name/avery-bleichfeld/">Avery Bleichfeld</a>, news staff</p>
     </div>
     <script src="js/waypoints.js"></script>
+    <script>
+
+      document.getElementById('danceContainer').onscroll = function() {danceScroll()};
+      function danceScroll(){
+        document.getElementById("danceScroll").style.opacity="0"
+        setTimeout(function danceScrollOut(){
+          document.getElementById('danceScroll').style.display="none";
+        }, 2500)
+      }
+
+      document.getElementById('philharmonicContainer').onscroll = function() {philScroll()};
+      function philScroll(){
+        document.getElementById("philharmonicScroll").style.opacity="0"
+        setTimeout(function danceScrollOut(){
+          document.getElementById('philharmonicScroll').style.display="none";
+        }, 2500)
+      }
+
+      document.getElementById('chuangContainer').onscroll = function() {chuangScroll()};
+      function chuangScroll(){
+        document.getElementById("chuangScroll").style.opacity="0"
+        setTimeout(function danceScrollOut(){
+          document.getElementById('chuangScroll').style.display="none";
+        }, 2500)
+      }
+
+    </script>
   </body>
 </html>
