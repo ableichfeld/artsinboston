@@ -248,6 +248,16 @@ a:hover{
   font-style: italic;
 }
 
+@media only screen and (max-width: 1000px){
+
+  .introHeader:last-of-type{
+    /*width: 60vw;
+    margin-left: 20vw;*/
+    font-size: 2rem;
+  }
+
+}
+
 @media only screen and (max-width: 900px){
 
   .mobile{
